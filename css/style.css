@@ -1,0 +1,378 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #222327;
+  --main-color: #29fd53;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--text-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--text-color);
+  /* box-shadow: rgba(53, 236, 71, 0.25) 0px 5px 5px 5px, rgba(212, 212, 212, 0.3) 0px 1px 3px -1px; */
+  padding: 28px 3%;
+  transition: all 0.5% ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo a{
+  text-decoration: none;
+}
+
+.logo i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 3px;
+}
+
+.logo span {
+  color: var(--bg-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 20px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.main a {
+  margin-right: 10px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.main a:hover {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--bg-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.social-media a i {
+  font-size: 22px;
+  color: var(--bg-color);
+  margin-right: 5px;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  padding-top: 5em;
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 20%;
+  grid-row: 20% auto 100vh;
+  gap: 50px;
+  width: 100%;
+  margin: 2rem 1rem;
+}
+
+.grid-1 {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(53, 236, 71, 0.25) 0px 5px 5px 5px, rgba(212, 212, 212, 0.3) 0px 1px 3px -1px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/home.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.grid-1 p {
+  margin: auto 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--bg-color);
+  text-align: center;
+}
+
+.grid-1 p:hover {
+  color: var(--main-color);
+}
+
+.grid-2 {
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: rgba(53, 236, 71, 0.25) 0px 5px 5px 5px, rgba(212, 212, 212, 0.3) 0px 1px 3px -1px;
+}
+
+.grid-2 h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--bg-color);
+  font-family: "Caveat", cursive;
+}
+
+.grid-2 p {
+  padding-top: 20px;
+  text-align: justify;
+  color: var(--bg-color);
+  font-size: 0.8rem;
+}
+
+.grid-2 img {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.grid-2 h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--bg-color);
+  font-family: "Caveat", cursive;
+}
+
+.grid-2 p {
+  padding-top: 20px;
+  text-align: justify;
+  color: var(--bg-color);
+  font-size: 0.8rem;
+}
+
+.grid-2 img {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.grid-3{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: var(--bg-color);
+}
+
+section #timetable{
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.grid-3 h2{
+  grid-column-end: 2;
+  text-align:  center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.grid-3 h2:hover{
+  color: var(--bg-color);
+}
+
+#timetable table tr td{
+  border-radius: 10px;
+  background: #29fd53;
+  box-shadow: rgba(53, 236, 71, 0.25) 0px 5px 5px 5px, rgba(212, 212, 212, 0.3) 0px 1px 3px -1px;
+  padding: 10px;
+  width: 200px;
+
+}
+
+#timetable .cinfo1 table tr td,
+#timetable .cinfo2 table tr td,
+#timetable .cinfo3 table tr td,
+#timetable .cinfo4 table tr td,
+#timetable .cinfo5 table tr td,
+#timetable .cinfo6 table tr td
+{
+  background-color: var(--text-color);
+  width: 100%;
+}
+
+#timetable .cinfo1 table tr .data,
+#timetable .cinfo2 table tr .data,
+#timetable .cinfo3 table tr .data,
+#timetable .cinfo4 table tr .data,
+#timetable .cinfo5 table tr .data,
+#timetable .cinfo6 table tr .data{
+  
+  text-align: start;
+}
+
+#timetable td h4{
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.cinfo1,.cinfo2,.cinfo3,.cinfo4,.cinfo5,.cinfo6{
+  display: none;
+}
+
+#timetable table{
+  width: 100%;
+  border-spacing: 20px;
+  border-collapse: separate;
+  border-radius: 10px;
+}
+
+#timetable td h4{
+  cursor: pointer;
+}
+
+td{
+  text-transform: capitalize;
+  border-radius: 10px ;
+}
+
+#timetable th{
+  text-transform: uppercase;
+}
+
+.cbutton{
+  padding: 5px;
+  background: yellow;
+  color: var(--text-color);
+  border-radius: 5px;
+
+}
+
+.cc {
+  display: inline-block;
+  background: var(--main-color);
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+
+.cc p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+
+  .navbar a {
+    padding: 5px 0;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  header {
+    justify-content: space-between;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .social-media {
+    display: none;
+    margin: 0px;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 240px;
+    height: 36vh;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0 25px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a:hover {
+    color: var(--text-color);
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+
+  footer {
+    display: inline-block;
+  }
+
+  footer .social-media i {
+    color: var(--text-color);
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 2fr);
+  }
+}

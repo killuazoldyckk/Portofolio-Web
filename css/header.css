@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  :root {
+    --bg-color: #fff;
+    --text-color: #222327;
+    --main-color: #29fd53;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: var(--text-color);
+    color: var(--text-color);
+  }
+
+header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--text-color);
+    padding: 28px 3%;
+    transition: all 0.5% ease;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo a{
+    text-decoration: none;
+  }
+  
+  .logo i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+  }
+  
+  .logo span {
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .navbar {
+    display: flex;
+  }
+  
+  .navbar a {
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 20px;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+  }
+  
+  .navbar a:hover {
+    color: var(--main-color);
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main a {
+    margin-right: 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+  }
+  
+  .main a:hover {
+    color: var(--main-color);
+  }
+  
+  #menu-icon {
+    font-size: 35px;
+    color: var(--bg-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+  }
+  
+  .social-media a i {
+    font-size: 22px;
+    color: var(--bg-color);
+    margin-right: 5px;
+  }
+
+  ul li a{
+    text-decoration: none;
+}
+
+header a{
+    text-decoration: none;
+}

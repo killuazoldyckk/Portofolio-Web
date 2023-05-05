@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Nugraha</title>
+
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><i class="ri-account-circle-line"></i><span>nugraha</span></a>
+        <ul class="navbar">
+          <li><a href="biography.html" target="_blank">biography</a></li>
+          <li><a href="resume.html" target="_blank">resume</a></li>
+          <li><a href="#timetable">time table</a></li>
+          <li><a href="galleries.html">galleries</a></li>
+          <li><a href="download.html">download</a></li>
+          <li><a href="link.html">links</a></li>
+        </ul>
+  
+        <div class="main">
+          <a href="login.html">Login</a>
+          <a href="index.html" onclick="alert('You have log out!')">Logout</a>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+  
+        <div class="social-media">
+          <a href="https://www.instagram.com/aprivia.nug/"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.linkedin.com/in/vioapriviaofc/"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/jefrinichol"><i class="ri-twitter-fill"></i></a>
+        </div>
+      </header>
+
+     <div class="container">
+        <table>
+            <form class="form">
+                <th colspan="2">
+                    <h2>registration form</h2>
+                </th>
+                <tr>
+                    <td>
+                        <label for="fname">
+                            first name
+                        </label>
+                    </td>
+                    <td>:&nbsp;<input type="text" name="fname" id="fname" required ></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">
+                            last name
+                        </label>
+                    </td>
+                    <td>:&nbsp;<input type="text" name="lname" id="lname" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">
+                            gender
+                        </label>
+                    </td>
+                    <td>:
+                        <select name="gender">
+                            <option value="none" selected>Gender</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address1">
+                            address 1
+                        </label>
+                    </td>
+                    <td>&nbsp;<textarea name="address1" cols="30" rows="5" placeholder="type your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address2">
+                            address 2
+                        </label>
+                    </td>
+                    <td>&nbsp;<textarea name="address2" cols="30" rows="5" placeholder="type your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">
+                            city
+                        </label>
+                    </td>
+                    <td>:&nbsp;<input type="city" name="city"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="id">
+                            state
+                        </label>
+                    </td>
+                    <td>:
+                        <select name="state">
+                            <option value="none" selected>State</option>
+                            <option>Perlis</option>
+                            <option>Kedah</option>
+                            <option>P.Pinang</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mp">
+                            phone number
+                        </label>
+                    </td>
+                    <td>:&nbsp;<input type="text" name="mp" id="mp" required placeholder="+60 xxxxxx"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">
+                            email 
+                        </label>
+                    </td>
+                    <td>:&nbsp;<input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="id">
+                            educational background
+                        </label>
+                    </td>
+                    <td>:
+                        <select name="ed">
+                            <option value="none" selected>State</option>
+                            <option>SPM</option>
+                            <option>Diploma</option>
+                            <option>Degree</option>
+                            <option>Master</option>
+                            <option>PhD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="id">
+                            username
+                        </label>
+                    </td>
+                    <td>:&nbsp;<input type="text" name="id" id="id" required placeholder="Enter Your ID"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pw">
+                            password
+                        </label>
+                    </td>
+                    <td>:&nbsp;<input type="password" name="pw" id="pw" required placeholder="Enter Password"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pw2">
+                            re-enter password
+                        </label>
+                    </td>
+                    <td>:&nbsp;<input type="password" name="pw2" id="pw2" required placeholder="Re-Enter Your Password"></td>
+                </tr>
+                <tr>
+                    <td class="btn" colspan="2">
+                        <input type="submit" name="submit" class="submit" value="Submit">
+                        <button type="reset" name="reset" class="reset">reset</button>
+                        <button onclick="history.back()" class="cancel">cancel</button>         
+                    </td>
+                </tr>
+                <tr>
+                    <td class="signup" colspan="2">
+                        <p>already have an account? <a href="login.html">login</a></p>
+                    </td>
+                </tr>
+            </form>
+         </table>
+     </div>
+
+</body>
+</html>

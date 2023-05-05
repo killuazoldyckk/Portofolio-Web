@@ -1,0 +1,51 @@
+:root {
+    --bg-color: #fff;
+    --text-color: #222327;
+    --main-color: #29fd53;
+  }
+
+.container{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.container h2{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container h2:hover{
+    font-size: 2.2rem;
+    transition: 0.2s;
+}
+
+.link-image img{
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.link{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.link h3{
+    color: var(--bg-color);
+    font-size: 20px;
+    margin-right: 50px;
+}
+.content-1 a,.content-2 a,.content-3 a{
+    color: var(--text-color);
+    background:var(--main-color);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
