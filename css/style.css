@@ -129,7 +129,7 @@ section {
   box-shadow: rgba(53, 236, 71, 0.25) 0px 5px 5px 5px, rgba(212, 212, 212, 0.3) 0px 1px 3px -1px;
   align-items: center;
   justify-content: center;
-  background-image: url(images/home.jpeg);
+  background-image: url(../images/home.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
