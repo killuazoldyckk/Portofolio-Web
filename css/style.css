@@ -288,14 +288,6 @@ td{
   text-transform: uppercase;
 }
 
-.cbutton{
-  padding: 5px;
-  background: yellow;
-  color: var(--text-color);
-  border-radius: 5px;
-
-}
-
 .cc {
   display: inline-block;
   background: var(--main-color);
